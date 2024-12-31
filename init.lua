@@ -1,7 +1,7 @@
 require 'core.keymaps' -- Load general keymaps
 require 'core.options' -- Load general options
 
--- [[ Install `lazy.nvim` plugin manager ]]
+-- Set up the Lazy plugin manager
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
@@ -12,11 +12,12 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- [[ Configure and install plugins ]]
+-- Set up plugins
 require('lazy').setup({
   require 'plugins.neotree',
 })
 
--- This is the workaround for lazy.nvim resetting runtimes to VIMRUNTIME, thus
--- reusing the bundled parsers of my neovim DEB build!
+-- This is a workaround for lazy.nvim resetting runtime paths to
+-- VIMRUNTIME, causing bundled parsers of my neovim DEB build not
+-- accessible!
 vim.opt.rtp:append('/usr/lib/nvim/')
