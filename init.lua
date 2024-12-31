@@ -18,9 +18,10 @@ require('lazy').setup({
   require 'plugins.colortheme',
   require 'plugins.bufferline',
   require 'plugins.lualine',
+  require 'plugins.treesitter',
 })
 
 -- This is a workaround for lazy.nvim resetting runtime paths to
 -- VIMRUNTIME, causing bundled parsers of my neovim DEB build not
 -- accessible!
-vim.opt.rtp:append('/usr/lib/nvim/')
+--vim.opt.rtp:append('/usr/lib/nvim/')
