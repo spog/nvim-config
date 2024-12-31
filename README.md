@@ -32,3 +32,4 @@ uses paths:
 8. [Add 'shaunsingh/nord.nvim' colortheme plugin](https://github.com/spog/nvim-config/commit/35fd5e2e2d5c9ebfc5d9d1b8c03f80fb2420535c)
 9. [Add 'akinsho/bufferline.nvim' plugin](https://github.com/spog/nvim-config/commit/95846b75a07f6e859fd8d3f6837c696cc85b89b1)
 10. [Add 'nvim-lualine/lualine.nvim' plugin](https://github.com/spog/nvim-config/commit/04b8b18791374bc3e8ba59324b3b0d2bcaa02856)
+11. [Add 'nvim-treesitter/nvim-treesitter' plugin](https://github.com/spog/nvim-config/commit/8fc2ccfad7085e0223aa6f0f1802b20524048dc4)
