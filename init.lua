@@ -1,4 +1,5 @@
 require 'core.keymaps' -- Load general keymaps
+require 'core.options' -- Load general options
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
