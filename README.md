@@ -29,3 +29,4 @@ uses paths:
 5. [Add general options as a core module](https://github.com/spog/nvim-config/commit/372263f9d741cc6c5533d20d5094a6386e44f7a0)
 6. [Disable mouse in general options](https://github.com/spog/nvim-config/commit/cd005c45acdeacf976c9202abff8ae6acf0d1c41)
 7. [Add shortcuts to open/visualize Neotree](https://github.com/spog/nvim-config/commit/ed02897407ac8e0844c016e1ed7cd37b471c0702)
+8. [Add 'shaunsingh/nord.nvim' colortheme plugin](https://github.com/spog/nvim-config/commit/35fd5e2e2d5c9ebfc5d9d1b8c03f80fb2420535c)
