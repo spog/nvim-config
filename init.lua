@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   require 'plugins.neotree',
   require 'plugins.colortheme',
+  require 'plugins.bufferline',
 })
 
 -- This is a workaround for lazy.nvim resetting runtime paths to
