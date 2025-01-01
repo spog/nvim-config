@@ -20,6 +20,7 @@ require('lazy').setup({
   require 'plugins.lualine',
   require 'plugins.treesitter',
   require 'plugins.telescope',
+  require 'plugins.lsp',
 })
 
 -- This is a workaround for lazy.nvim resetting runtime paths to
