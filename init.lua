@@ -22,6 +22,7 @@ require('lazy').setup({
   require 'plugins.telescope',
   require 'plugins.lsp',
   require 'plugins.autocompletion',
+  require 'plugins.autoformatting',
 })
 
 -- This is a workaround for lazy.nvim resetting runtime paths to
