@@ -24,6 +24,7 @@ require('lazy').setup({
   require 'plugins.autocompletion',
   require 'plugins.autoformatting',
   require 'plugins.alpha',
+  require 'plugins.indent-blankline',
 })
 
 -- This is a workaround for lazy.nvim resetting runtime paths to
