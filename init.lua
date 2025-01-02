@@ -27,6 +27,22 @@ require('lazy').setup({
   require 'plugins.indent-blankline',
 })
 
+vim.g.markdown_fenced_languages = {
+	"ts=typescript",
+}
+
+local nvim_lsp = require("lspconfig")
+nvim_lsp.denols.setup({
+	on_attach = on_attach,
+	root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
+})
+
+nvim_lsp.ts_ls.setup({
+	on_attach = on_attach,
+	root_dir = nvim_lsp.util.root_pattern("package.json"),
+	single_file_support = false,
+})
+
 -- This is a workaround for lazy.nvim resetting runtime paths to
 -- VIMRUNTIME, causing bundled parsers of my neovim DEB build not
 -- accessible!
